@@ -57,6 +57,8 @@ nav {
 /* FOOTER */
 
 #footer {
+  position: realtive;
+  bottom: 0;
   border-top: 5px solid black;
   width: 100%;
   background-color: var(--footerColor);
