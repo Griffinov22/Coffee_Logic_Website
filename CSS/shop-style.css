@@ -1,0 +1,45 @@
+#main {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  font-family: var(--mainFont);
+}
+#shop-text {
+  flex-basis: 100%;
+  text-align: center;
+  font-variant: small-caps;
+  font-size: 3em;
+  text-decoration: underline;
+  padding-bottom: 3em;
+}
+
+.card {
+  text-align: center;
+  width: 25%;
+  padding: 20px;
+}
+.card:hover {
+  cursor: pointer;
+}
+.shop-img {
+  width: 100%;
+  height: 450px;
+  padding: 20px;
+  background-color: var(--footerColor);
+  box-shadow: 20px -20px var(--mainTextColor), 40px -40px tan;
+}
+.fig-text {
+  color: var(--mainTextColor);
+  font-size: 1.2em;
+  font-weight: 900;
+}
+.fig-text h2 {
+  padding-top: 1em;
+}
+.fig-text p {
+  padding-top: 1em;
+  color: var(--footerColor);
+}

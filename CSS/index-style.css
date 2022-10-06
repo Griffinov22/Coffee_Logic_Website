@@ -1,0 +1,107 @@
+/* CAROSEL */
+#div-carosel {
+  width: 100%;
+  position: relative;
+  height: calc(100vh - 101px);
+  border-bottom: 5px solid black;
+  overflow: hidden;
+}
+#div-carosel #carosel-text {
+  width: 40%;
+  color: white;
+  position: absolute;
+  top: 20%;
+  right: 5%;
+  font-size: 3em;
+  font-weight: 900;
+  font-family: var(--bannerFont);
+  white-space: wrap;
+  transition: opacity 1s;
+  z-index: 3;
+}
+#div-carosel .carosel-btn {
+  position: absolute;
+  top: 50%;
+  margin: 0 2rem;
+  padding: 0 1rem;
+  font-size: 4rem;
+  z-index: 1;
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.5);
+  border-radius: 10%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+#div-carosel #right-btn {
+  right: 0;
+}
+#div-carosel .carosel-btn:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  cursor: pointer;
+}
+#div-carosel .slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  transition: transform 1s;
+}
+.carosel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+/* MAIN SECTION */
+#main {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 60%;
+  font-family: var(--mainFont);
+  margin: auto;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 50px;
+  column-gap: 150px;
+}
+#main .main-img {
+  display: block;
+  width: 500px;
+  height: 450px;
+}
+
+.main-header {
+  color: var(--mainTextColor);
+  font-size: 2em;
+  text-align: center;
+  padding-bottom: 1em;
+}
+.main-para {
+  color: var(--mainTextColor);
+  text-align: center;
+  line-height: 2.5ch;
+  font-size: 1.3em;
+}
+.sub-div {
+  text-align: center;
+  padding-top: 3em;
+}
+.main-link {
+  color: var(--mainTextColor);
+  text-decoration: none;
+  font-size: 1.5em;
+  padding: 10px 30px;
+  border: 2px solid var(--mainTextColor);
+  border-radius: 99% / 99%;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+.main-link:hover {
+  color: white;
+  background-color: var(--mainTextColor);
+}

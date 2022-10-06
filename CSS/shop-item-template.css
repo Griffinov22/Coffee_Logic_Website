@@ -1,0 +1,84 @@
+.left-col {
+  width: 40%;
+  height: 50vh;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10%;
+  float: left;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.prod-name {
+  font-size: 2em;
+  color: var(--footerColor);
+  margin-bottom: 20px;
+}
+.price {
+  font-size: 1.5em;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.prod-desc {
+  font-size: 1.2em;
+  color: rgb(117, 114, 114);
+  margin-bottom: 20px;
+}
+
+.right-col {
+  width: 40%;
+  height: 50vh;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10%;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.img {
+  display: block;
+  width: 300px;
+  height: 350px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.box {
+  width: 150px;
+  position: relative;
+}
+.dropdown {
+  background-color: rgba(211, 208, 208, 0.4);
+  width: 150px;
+  height: 30px;
+  border-radius: 2px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 2px;
+  padding-right: 30px;
+  font-size: 1.2em;
+  font-weight: 500;
+
+  appearance: none;
+}
+.box:after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 1.2em;
+  background-color: rgb(156, 153, 153);
+  color: #fff;
+  padding: 2px 5px;
+  pointer-events: none;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+}

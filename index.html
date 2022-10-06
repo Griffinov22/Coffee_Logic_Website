@@ -4,12 +4,112 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="/JS/carosel.js"></script>
+    <link href="/CSS/nav-template.css" rel="stylesheet" type="text/css" />
+    <link href="CSS/index-style.css" rel="stylesheet" type="text/css" />
     <title>Coffee Logic</title>
   </head>
   <body>
-    <h1>Hello World</h1>
-    <p>Hi</p>
+    <nav id="nav">
+      <img
+        id="banner"
+        onclick="location.href='index.html'"
+        src="/images/coffee-banner-w-loop-lighter.png"
+        alt="Coffee Logic"
+      />
+      <ul id="nav-list">
+        <li class="nav-item"><a href="index.html">Home</a></li>
+        <li class="nav-item"><a href="#">About</a></li>
+        <li class="nav-item"><a href="shop.html">Shop</a></li>
+        <li class="nav-item"><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div id="div-carosel">
+      <h1 id="carosel-text">&nbsp;Where great minds relax and unwind</h1>
+      <button class="carosel-btn" id="right-btn" type="button">&#8658;</button>
+      <button class="carosel-btn" id="left-btn" type="button">&#8656;</button>
+      <div class="slide">
+        <img
+          class="carosel-img"
+          src="/images/coffee_shop.jpg"
+          alt="coffee shop image"
+        />
+      </div>
+
+      <div class="slide">
+        <img
+          class="carosel-img"
+          src="/images/espresso_shot.jpg"
+          alt="coffee shop image"
+        />
+      </div>
+
+      <div class="slide">
+        <img
+          class="carosel-img"
+          src="/images/pour_over.jpg"
+          alt="coffee shop image"
+        />
+      </div>
+    </div>
+
+    <main id="main">
+      <div id="bean-text" class="main-div">
+        <h2 class="main-header">Random Text</h2>
+        <p class="main-para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui debitis
+          sunt magnam vel, doloremque cum similique nesciunt blanditiis quod
+          sequi ratione optio modi rem accusamus id numquam hic vero facilis?
+        </p>
+        <div class="sub-div">
+          <a class="main-link" href="#">Link</a>
+        </div>
+      </div>
+      <img
+        class="main-img"
+        src="/images/Coffee-Bean-Bag.JPG"
+        alt="beans beans the magical fruit, the more you eat, the more you toot, the more you toot, the better you feel, beans, beans, the magical meal"
+      />
+      <!-- split -->
+      <img class="main-img" src="/images/mug.JPG" alt="Coffee Logic Mug" />
+      <div id="mug-text" class="main-div">
+        <h2 class="main-header">Random Text</h2>
+        <p class="main-para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui debitis
+          sunt magnam vel, doloremque cum similique nesciunt blanditiis quod
+          sequi ratione optio modi rem accusamus id numquam hic vero facilis?
+        </p>
+        <div class="sub-div">
+          <a class="main-link" href="#">Link</a>
+        </div>
+      </div>
+      <!-- split  -->
+      <div id="shirt-text" class="main-div">
+        <h2 class="main-header">Random Text</h2>
+        <p class="main-para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui debitis
+          sunt magnam vel, doloremque cum similique nesciunt blanditiis quod
+          sequi ratione optio modi rem accusamus id numquam hic vero facilis?
+        </p>
+        <div class="sub-div">
+          <a class="main-link" href="#">Link</a>
+        </div>
+      </div>
+      <img
+        class="main-img"
+        src="/images/shirt.JPG"
+        alt="Coffee Logic Shirt Design"
+      />
+    </main>
+    <footer id="footer">
+      <ul id="footer-list">
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </footer>
   </body>
 </html>
-
-
