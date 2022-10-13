@@ -30,6 +30,7 @@
 
 .right-col {
   width: 50%;
+  height: 50vh;
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 10%;
@@ -69,6 +70,13 @@
   font-weight: 500;
   text-align: center;
   appearance: none;
+  border: none;
+}
+select:focus,
+.box:focus,
+.dropdown:focus .select:after {
+  border: none !important;
+  border-style: none;
 }
 #quantity {
   width: 50px;
@@ -86,4 +94,64 @@
   pointer-events: none;
   border-top-right-radius: 2px;
   border-bottom-left-radius: 2px;
+}
+
+#user-form {
+  width: 40%;
+  padding: 20px;
+  float: right;
+  background-color: rgba(211, 208, 208, 0.4);
+  margin-right: 10%;
+  margin-bottom: 10%;
+  position: relative;
+  font-size: 20px;
+  font-family: var(--mainFont);
+}
+#payment-header {
+  position: absolute;
+  top: -35px;
+}
+
+#first-div {
+  float: left;
+  width: 40%;
+}
+#last-div {
+  float: right;
+  width: 60%;
+}
+.payment-div {
+  font-variant: small-caps;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.payment-el {
+  /* the input elements */
+  font-size: 20px;
+  width: 100%;
+}
+
+#first-name {
+  width: 80%;
+}
+#last-name {
+  width: 100%;
+}
+
+#wrapper-btn {
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+#payment-btn {
+  font-size: 20px;
+  background-color: rgb(53, 52, 52);
+  color: white;
+  border-radius: 5px;
+  padding: 2px;
+  border: none;
+}
+#payment-btn:hover {
+  background-color: rgba(53, 52, 52, 0.8);
+  cursor: pointer;
 }

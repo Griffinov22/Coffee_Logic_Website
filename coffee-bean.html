@@ -66,6 +66,58 @@
       </div>
     </div>
     <div style="clear: both"></div>
+
+    <form id="user-form">
+      <h2 id="payment-header">Payment Method</h2>
+
+      <div id="first-div" class="payment-div">
+        <label for="first-name"
+          >First Name: <br /><input
+            id="first-name"
+            class="payment-el"
+            name="first-name"
+            type="text"
+        /></label>
+      </div>
+
+      <div id="last-div" class="payment-div">
+        <label for="last-name"
+          >LastName: <br /><input
+            id="last-name"
+            class="payment-el"
+            name="last-name"
+            type="text"
+        /></label>
+      </div>
+
+      <div id="card-div" class="payment-div">
+        <label for="card-info"
+          >Card-Info: <br /><input
+            id="card-info"
+            class="payment-el"
+            type="tel"
+            maxlength="12"
+            placeholder="xxxx xxxx xxxx xxxx"
+        /></label>
+      </div>
+
+      <div id="address-div" class="payment-div">
+        <label for="address"
+          >Address: <br /><input
+            id="address"
+            class="payment-el"
+            name="address"
+            type="text"
+            placeholder="110 Coffee Road 46932, IN, USA"
+        /></label>
+      </div>
+
+      <div id="wrapper-btn">
+        <input type="button" id="payment-btn" value="Order Me Now!" />
+      </div>
+      <!-- JS input h2 el here to notify user that it was successful or error -->
+    </form>
+
     <footer id="footer">
       <ul id="footer-list">
         <li><a href="#">Twitter</a></li>
