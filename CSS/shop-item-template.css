@@ -11,6 +11,7 @@
   justify-content: center;
   align-content: center;
   margin-bottom: 5em;
+  position: relative;
 }
 .prod-name {
   font-size: 2em;
@@ -109,7 +110,8 @@ select:focus,
 }
 #payment-header {
   position: absolute;
-  top: -35px;
+  top: -45px;
+  left: 10px;
 }
 
 #first-div {
@@ -154,4 +156,18 @@ select:focus,
 #payment-btn:hover {
   background-color: rgba(53, 52, 52, 0.8);
   cursor: pointer;
+}
+
+.workingcart {
+  font-size: 20px;
+  text-align: center;
+}
+.basket {
+  font-size: 16px;
+  position: relative;
+  bottom: -40px;
+}
+#final-price {
+  font-variant: small-caps;
+  color: black;
 }
