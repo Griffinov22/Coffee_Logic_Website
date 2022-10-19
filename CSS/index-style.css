@@ -1,4 +1,8 @@
 /* CAROSEL */
+
+html {
+  scroll-behavior: smooth;
+}
 #div-carosel {
   width: 100%;
   position: relative;
@@ -104,4 +108,23 @@
 .main-link:hover {
   color: white;
   background-color: var(--mainTextColor);
+}
+
+#center {
+  text-align: center;
+  padding: 40px;
+}
+
+#to-top-link {
+  text-align: center;
+  font-size: 1.4em;
+  text-decoration: none;
+  font-family: var(--mainFont);
+  font-style: italic;
+  font-variant: small-caps;
+  font-weight: 800;
+  transition: color 0.5s ease;
+}
+#to-top-link:hover {
+  color: var(--footerColor);
 }
