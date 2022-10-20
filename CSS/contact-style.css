@@ -1,0 +1,31 @@
+#pic-collage {
+  width: 80%;
+  display: grid;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "dry-pourover espresso-shot sunset sunset coffee-basket"
+    "dry-pourover coffee-on-vine coffee-on-vine latte-art coffee-basket";
+}
+
+#sunset-pic {
+  grid-area: sunset;
+}
+#coffee-on-vine {
+  grid-area: coffee-on-vine;
+}
+#dry-pourover {
+  grid-area: dry-pourover;
+}
+#latte-art {
+  grid-area: latte-art;
+}
+#espress-shot {
+  grid-area: espresso-shot;
+}
+#coffee-basket {
+  grid-area: coffee-basket;
+}
