@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/JS/googlemap-style.js"></script>
     <link href="/css/contact-style.css" rel="stylesheet" type="text/css" />
     <link href="/CSS/nav-template.css" rel="stylesheet" type="text/css" />
     <title>Coffee Logic - Contact</title>
@@ -31,6 +32,7 @@
         src="/images/pic-colage/coffee-at-sunset.jpg"
         alt="coffee at sunset"
       />
+
       <img
         class="pic"
         id="coffee-on-vine"
@@ -43,6 +45,7 @@
         src="/images/pic-colage/dry-pourover.jpg"
         alt="pour over"
       />
+
       <img
         class="pic"
         id="latte-art"
@@ -62,6 +65,31 @@
         alt="coffee cherries in basket"
       />
     </div>
+
+    <main id="main">
+      <h1>Contact:</h1>
+      <div id="flex-div">
+        <iframe
+          id="map"
+          class="flex-item"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.866622583576!2d144.9544910157172!3d-37.81659297975189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4c3be684c5%3A0xb3e31e9d03769a42!2sCoffee%20Logic!5e0!3m2!1sen!2sus!4v1666523298123!5m2!1sen!2sus"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+
+        <div id="hours-div" class="flex-item">
+          <div id="para">
+            <h2>Hours:</h2>
+          </div>
+          <ul>
+            <li>Sun-Fri: 6:00AM - 9:00PM</li>
+            <li>Sat: 6:00AM - 5:00PM</li>
+            <li>Sun: <span id="closed">CLOSED</span></li>
+          </ul>
+        </div>
+      </div>
+    </main>
 
     <footer id="footer">
       <ul id="footer-list">
