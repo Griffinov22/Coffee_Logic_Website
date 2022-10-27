@@ -64,7 +64,7 @@ html {
 #main {
   padding-top: 50px;
   padding-bottom: 50px;
-  width: 60%;
+  width: 100%;
   font-family: var(--mainFont);
   margin: auto;
   display: grid;
@@ -72,7 +72,7 @@ html {
   justify-items: center;
   grid-template-columns: repeat(2, 1fr);
   row-gap: 50px;
-  column-gap: 150px;
+  column-gap: 5%;
 }
 #main .main-img {
   display: block;
@@ -91,6 +91,8 @@ html {
   text-align: center;
   line-height: 2.5ch;
   font-size: 1.3em;
+  padding: 2em;
+  padding-top: 0;
 }
 .sub-div {
   text-align: center;
