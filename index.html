@@ -4,11 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="/JS/drop-down.js"></script>
     <script defer src="/JS/carosel.js"></script>
     <link href="/CSS/nav-template.css" rel="stylesheet" type="text/css" />
     <link href="CSS/index-style.css" rel="stylesheet" type="text/css" />
     <link
       href="/CSS/Media-Queries/index-queries.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="/CSS/Media-Queries/nav-query.css"
       rel="stylesheet"
       type="text/css"
     />
@@ -31,7 +37,9 @@
     </nav>
 
     <div id="div-carosel">
-      <h1 id="carosel-text">&nbsp;Where great minds relax and refuel</h1>
+      <h1 id="carosel-text">
+        <span id="tab">&nbsp;</span>Where great minds relax and refuel
+      </h1>
       <button class="carosel-btn" id="right-btn" type="button">&#8658;</button>
       <button class="carosel-btn" id="left-btn" type="button">&#8656;</button>
       <div class="slide">

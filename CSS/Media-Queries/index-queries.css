@@ -22,69 +22,22 @@
   #shirt-pic {
     order: 6;
   }
+
+  .main-img {
+    margin-bottom: 5%;
+  }
+
   /* end index.html */
 }
 
-@media (max-width: 1200px) {
-  /* shop.html */
-  #main-shop {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .card {
-    width: 50%;
-    margin-bottom: 5%;
-  }
-  .shop-img {
-    height: 350px;
-  }
-  #main-shop:last-child {
-    margin-bottom: 0;
-  }
-}
-
-@media (max-width: 750px) {
-  .prod-name,
-  .price,
-  .prod-desc,
-  .dropdown,
-  .basket,
-  .workingcart,
-  #payment-header,
-  .payment-div,
-  #payment-btn,
-  .payment-el,
-  #user-form {
-    font-size: 14px;
-  }
-
-  #user-form {
-    margin: 5%;
-  }
-  .payment-el {
+@media (max-width: 760px) {
+  #div-carosel #carosel-text {
     width: 100%;
+    text-align: center;
+    top: 2%;
+    right: 0;
   }
-   {
-    width: 50%;
-  }
-  .left-col {
-    width: 40%;
-    height: auto;
-  }
-  .right-col {
-    margin-left: 0;
-  }
-  .right-col .img {
-    width: 250px;
-    height: 125px;
-  }
-  #nav-list {
+  #div-carosel #tab {
     display: none;
-  }
-  #user-form {
-    float: right;
-    width: 40%;
-    margin: 5%;
   }
 }

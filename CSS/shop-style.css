@@ -18,20 +18,22 @@
 
 .card {
   text-align: center;
-  width: 25%;
+  width: 400px;
   padding: 20px;
+  margin-bottom: 5%;
 }
 .card:hover {
   cursor: pointer;
 }
 .shop-img {
-  width: 100%;
+  width: 400px;
   height: 450px;
   padding: 20px;
   background-color: var(--footerColor);
   box-shadow: 20px -20px var(--mainTextColor), 40px -40px tan;
 }
 .fig-text {
+  text-align: center;
   color: var(--mainTextColor);
   font-size: 1.2em;
   font-weight: 900;

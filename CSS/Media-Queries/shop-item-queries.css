@@ -1,0 +1,9 @@
+@media (max-width: 1412px) {
+  /* shop.html */
+  #main-shop {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+}

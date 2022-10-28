@@ -107,6 +107,7 @@ select:focus,
   position: relative;
   font-size: 20px;
   font-family: var(--mainFont);
+  margin-right: 5%;
 }
 #payment-header {
   position: absolute;
