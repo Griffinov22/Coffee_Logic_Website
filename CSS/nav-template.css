@@ -41,7 +41,10 @@ nav {
 }
 .dropdown-div {
   /* this applies in js */
-  background: green;
+  border: 4px solid black;
+  border-radius: 5px;
+  padding: 1px;
+  margin-right: 5%;
 }
 /* .nav-item {
   align-items: center;
