@@ -16,6 +16,7 @@ nav {
   width: 100%;
   height: 100px;
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: space-between;
   font-family: var(--bannerFont);
@@ -32,23 +33,14 @@ nav {
   cursor: pointer;
 }
 #nav-list {
-  width: 50%;
+  width: 80%;
   display: flex;
   list-style-type: none;
   justify-content: space-evenly;
   align-content: center;
+  padding-right: 5%;
   white-space: nowrap;
 }
-.dropdown-div {
-  /* this applies in js */
-  border: 4px solid black;
-  border-radius: 5px;
-  padding: 1px;
-  margin-right: 5%;
-}
-/* .nav-item {
-  align-items: center;
-} */
 .nav-item a {
   text-decoration: none;
   color: black;
@@ -60,11 +52,40 @@ nav {
   font-size: 1.7em;
   font-weight: bolder;
 }
+/* drop-downs */
+.wrapper {
+  padding-right: 5%;
+}
+.drop-btn {
+  /* this applies in js */
+  border: 4px solid black;
+  border-radius: 5px;
+  padding: 1px;
+  background-color: white;
+}
+
+.drop-content {
+  display: block;
+}
+#drop-ul {
+  list-style-type: none;
+  font-family: var(--bannerFont);
+}
+#drop-ul li {
+  display: block;
+  text-align: center;
+  padding: 5%;
+  border-bottom: 2px solid black;
+}
+
+.hidden {
+  display: none;
+}
 
 /* FOOTER */
 
 #footer {
-  position: realtive;
+  position: relative;
   bottom: 0;
   border-top: 5px solid black;
   width: 100%;

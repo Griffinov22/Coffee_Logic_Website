@@ -30,12 +30,14 @@
   /* end index.html */
 }
 
-@media (max-width: 760px) {
+@media (max-width: 800px) {
   #div-carosel #carosel-text {
     width: 100%;
     text-align: center;
     top: 2%;
     right: 0;
+    left: 0;
+    padding: 2% 5%;
   }
   #div-carosel #tab {
     display: none;

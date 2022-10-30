@@ -3,12 +3,17 @@
 html {
   scroll-behavior: smooth;
 }
+
 #div-carosel {
   width: 100%;
   position: relative;
   height: calc(100vh - 101px);
   border-bottom: 5px solid black;
   overflow: hidden;
+  transition: transform 1s ease-in-out;
+}
+.pull-down {
+  transform: translateY(264px);
 }
 #div-carosel #carosel-text {
   width: 40%;
