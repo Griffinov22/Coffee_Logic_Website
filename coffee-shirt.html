@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script defer src="/JS/credit-simple.js"></script>
+    <script defer src="/JS/drop-down.js"></script>
     <link href="/CSS/nav-template.css" type="text/css" rel="stylesheet" />
     <link href="/CSS/shop-item-template.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="/CSS/Media-Queries/shop-item-queries.css" />
     <title>Coffee Logic Store-Coffee Shirt</title>
   </head>
   <body>
@@ -23,7 +25,54 @@
         <li class="nav-item"><a href="shop.html">Shop</a></li>
         <li class="nav-item"><a href="contact.html">Contact</a></li>
       </ul>
+      <!-- button here when on a mobile device -->
+      <div class="wrapper">
+        <button type="button" class="drop-btn">
+          <svg
+            width="32px"
+            height="32px"
+            viewBox="0 0 32 32"
+            enable-background="new 0 0 32 32"
+            id="Glyph"
+            version="1.1"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <path
+              d="M26,16c0,1.104-0.896,2-2,2H8c-1.104,0-2-0.896-2-2s0.896-2,2-2h16C25.104,14,26,14.896,26,16z"
+              id="XMLID_314_"
+            />
+            <path
+              d="M26,8c0,1.104-0.896,2-2,2H8c-1.104,0-2-0.896-2-2s0.896-2,2-2h16C25.104,6,26,6.896,26,8z"
+              id="XMLID_315_"
+            />
+            <path
+              d="M26,24c0,1.104-0.896,2-2,2H8c-1.104,0-2-0.896-2-2s0.896-2,2-2h16C25.104,22,26,22.896,26,24z"
+              id="XMLID_316_"
+            />
+          </svg>
+        </button>
+      </div>
     </nav>
+
+    <div class="drop-content">
+      <ul id="drop-ul">
+        <li class="nav-item" onclick="location.href='index.html'">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="nav-item" onclick="location.href='about.html'">
+          <a href="about.html">About</a>
+        </li>
+        <li class="nav-item" onclick="location.href='shop.html'">
+          <a href="shop.html">Shop</a>
+        </li>
+        <li class="nav-item" onclick="location.href='contact.html'">
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+
     <div id="content">
       <div class="left-col">
         <h2 class="prod-name">Coffee Logic T-Shirt</h2>
@@ -36,12 +85,7 @@
 
         <form id="top-form" class="form" action="#">
           <div class="box">
-            <select
-              style="width: 50%"
-              name="quantity"
-              class="dropdown"
-              id="quantity"
-            >
+            <select name="quantity" class="dropdown" id="quantity">
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -66,7 +110,7 @@
 
       <div id="first-div" class="payment-div">
         <label for="first-name"
-          >First Name: <br /><input
+          >First-Name: <br /><input
             id="first-name"
             class="payment-el"
             name="first-name"
@@ -77,7 +121,7 @@
 
       <div id="last-div" class="payment-div">
         <label for="last-name"
-          >LastName: <br /><input
+          >Last-Name: <br /><input
             id="last-name"
             class="payment-el"
             name="last-name"

@@ -5,10 +5,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  text-align: center;
   font-family: var(--mainFont);
 }
 #shop-text {
-  flex-basis: 100%;
+  width: 100%;
+  padding: 0 2%;
   text-align: center;
   font-variant: small-caps;
   font-size: 3em;
@@ -19,15 +21,18 @@
 .card {
   text-align: center;
   width: 400px;
-  padding: 20px;
-  margin-bottom: 5%;
+  padding-top: 40px;
+  padding-right: 60px;
+  padding-bottom: 0px;
+  padding-left: 30px;
+  margin-bottom: 180px;
 }
 .card:hover {
   cursor: pointer;
 }
 .shop-img {
-  width: 400px;
-  height: 450px;
+  max-width: 100%;
+  height: 100%;
   padding: 20px;
   background-color: var(--footerColor);
   box-shadow: 20px -20px var(--mainTextColor), 40px -40px tan;

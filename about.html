@@ -4,8 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link href="/CSS/nav-template.css" type="text/css" rel="stylesheet" />
+    <script defer src="/JS/drop-down.js"></script>
+    <link href="/CSS/nav-template.css" rel="stylesheet" type="text/css" />
+    <link href="CSS/about-style.css" type="text/css" rel="stylesheet" />
+    <link
+      href="/CSS/Media-Queries/about-query.css"
+      type="text/css"
+      rel="stylesheet"
+    />
     <title>Coffee Logic - About</title>
   </head>
   <body>
@@ -22,9 +28,113 @@
         <li class="nav-item"><a href="shop.html">Shop</a></li>
         <li class="nav-item"><a href="contact.html">Contact</a></li>
       </ul>
+      <!-- button here when on a mobile device -->
+      <div class="wrapper">
+        <button type="button" class="drop-btn">
+          <svg
+            width="32px"
+            height="32px"
+            viewBox="0 0 32 32"
+            enable-background="new 0 0 32 32"
+            id="Glyph"
+            version="1.1"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <path
+              d="M26,16c0,1.104-0.896,2-2,2H8c-1.104,0-2-0.896-2-2s0.896-2,2-2h16C25.104,14,26,14.896,26,16z"
+              id="XMLID_314_"
+            />
+            <path
+              d="M26,8c0,1.104-0.896,2-2,2H8c-1.104,0-2-0.896-2-2s0.896-2,2-2h16C25.104,6,26,6.896,26,8z"
+              id="XMLID_315_"
+            />
+            <path
+              d="M26,24c0,1.104-0.896,2-2,2H8c-1.104,0-2-0.896-2-2s0.896-2,2-2h16C25.104,22,26,22.896,26,24z"
+              id="XMLID_316_"
+            />
+          </svg>
+        </button>
+      </div>
     </nav>
+
+    <div class="drop-content">
+      <ul id="drop-ul">
+        <li class="nav-item" onclick="location.href='index.html'">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="nav-item" onclick="location.href='about.html'">
+          <a href="about.html">About</a>
+        </li>
+        <li class="nav-item" onclick="location.href='shop.html'">
+          <a href="shop.html">Shop</a>
+        </li>
+        <li class="nav-item" onclick="location.href='contact.html'">
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
     <!-- change the content in here -->
-    <div style="width: 100%; height: 80vh">Hello</div>
+
+    <div id="header">
+      <img
+        class="imgheader"
+        src="images/coffeeshop.jpg"
+        alt="banner"
+        height="100%"
+        width="100%"
+      />
+
+      <div id="lightbox">
+        <h1>
+          "Our mission is to transform and innovate the way sustainable coffee
+          is created."
+        </h1>
+      </div>
+    </div>
+    <!-- main -->
+    <div id="content">
+      <div id="title">
+        <h1>About Us</h1>
+      </div>
+
+      <div id="top">
+        <div id="flex-container">
+          <div class="flex-item">
+            <img class="right" src="images/coffee fields.jpg" alt="picture" />
+            <p>
+              Coffee Logic is a sustainable and modern take on coffee. Driven by
+              a desire to serve the people, we bring delicious espresso with a
+              purpose on: <i>one cup at a time</i>. And it all starts in the
+              mountains of Colombia where good things grow.
+            </p>
+          </div>
+
+          <div class="flex-item">
+            <img id="left" src="images/holdingbean.jpg" alt="picture" />
+            <p>
+              Coffee Logic is a new type of coffee experience that brings
+              together quality, sustainability, and community. Our focus is on
+              creating an environment that nurtures people's minds, hearts and
+              bodies through our vision of continuous improvement in education,
+              production and differentiation through sustainable agriculture.
+            </p>
+          </div>
+
+          <div class="flex-item">
+            <img class="right" src="images/coffee face.jpg" alt="picture" />
+            <p>
+              Coffee Logic is a new type of coffee experience that brings
+              together quality, sustainability, and community. Our focus is on
+              creating an environment that nurtures people's minds, hearts and
+              bodies through our vision of continuous improvement in education,
+              production and differentiation through sustainable agriculture.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- change content END -->
     <footer id="footer">

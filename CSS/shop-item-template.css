@@ -1,5 +1,5 @@
 .left-col {
-  width: 30%;
+  width: 40%;
   height: auto;
   margin-left: 5%;
   margin-right: 5%;
@@ -12,7 +12,22 @@
   align-content: center;
   margin-bottom: 5em;
   position: relative;
+  clear: left;
 }
+
+.right-col {
+  width: 40%;
+  height: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10%;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 5em;
+}
+
 .prod-name {
   font-size: 2em;
   color: var(--footerColor);
@@ -27,19 +42,6 @@
   font-size: 1.5em;
   color: rgb(57, 56, 56);
   margin-bottom: 40px;
-}
-
-.right-col {
-  width: 40%;
-  height: auto;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 10%;
-  float: right;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  margin-bottom: 5em;
 }
 
 .img {
@@ -66,21 +68,15 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   padding: 2px;
-  padding-right: 30px;
   font-size: 1.2em;
   font-weight: 700;
   text-align: center;
   appearance: none;
   border: none;
 }
-select:focus,
-.box:focus,
-.dropdown:focus .select:after {
-  border: none !important;
-  border-style: none;
-}
+
 #quantity {
-  width: 50px;
+  width: 100px;
 }
 .box:after {
   content: "\25BC";
@@ -128,6 +124,7 @@ select:focus,
   font-weight: 700;
   margin-bottom: 10px;
 }
+
 .payment-el {
   /* the input elements */
   font-size: 20px;
@@ -162,12 +159,14 @@ select:focus,
 .workingcart {
   font-size: 20px;
   text-align: center;
+  margin-bottom: 20%;
 }
 .basket {
   font-size: 16px;
   position: relative;
   bottom: -40px;
 }
+
 #final-price {
   font-variant: small-caps;
   color: black;

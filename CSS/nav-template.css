@@ -21,6 +21,8 @@ nav {
   justify-content: space-between;
   font-family: var(--bannerFont);
   border-bottom: 5px solid black;
+  background-color: white;
+  z-index: 2;
 }
 #banner {
   max-width: 225px;
@@ -61,12 +63,23 @@ nav {
   border: 4px solid black;
   border-radius: 5px;
   padding: 1px;
+}
+.drop-btn:hover,
+.drop-btn:active {
+  filter: brightness(50%);
+}
+/* box for navigation */
+.drop-content {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  transition: all 1s ease-in-out;
+  transform: translateY(-100%);
   background-color: white;
 }
 
-.drop-content {
-  display: block;
-}
 #drop-ul {
   list-style-type: none;
   font-family: var(--bannerFont);
@@ -76,6 +89,15 @@ nav {
   text-align: center;
   padding: 5%;
   border-bottom: 2px solid black;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+#drop-ul li:hover {
+  background-color: var(--footerColor);
+  color: white;
+}
+#drop-ul li:hover a {
+  color: white;
 }
 
 .hidden {
@@ -87,6 +109,8 @@ nav {
 #footer {
   position: relative;
   bottom: 0;
+  left: 0;
+  right: 0;
   border-top: 5px solid black;
   width: 100%;
   background-color: var(--footerColor);

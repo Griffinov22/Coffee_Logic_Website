@@ -12,9 +12,7 @@ html {
   overflow: hidden;
   transition: transform 1s ease-in-out;
 }
-.pull-down {
-  transform: translateY(264px);
-}
+
 #div-carosel #carosel-text {
   width: 40%;
   color: white;

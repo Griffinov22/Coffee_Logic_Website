@@ -1,0 +1,18 @@
+@media (max-width: 600px) {
+  #pic-collage {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  #flex-div {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  .flex-item {
+    width: 80%;
+    /* not sure why I need to put this here, but it won't work without */
+    margin: auto;
+    margin-bottom: 5%;
+  }
+}

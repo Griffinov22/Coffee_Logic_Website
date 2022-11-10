@@ -10,6 +10,7 @@ const dropContent = document.querySelector(".drop-content");
 const carsoel = document.querySelector("#div-carosel");
 
 const mediaQuery = window.matchMedia("(max-width: 800px)");
+const body = document.querySelector("body");
 
 function isPhone(e) {
   if (e.matches) {
@@ -21,10 +22,32 @@ function isPhone(e) {
   }
 }
 
+//setup smooth transition for all elements
+for (let i = 2; i < body.children.length; i++) {
+  body.children[i].style.transition = `transform 1s ease-in-out`;
+}
+
+function makeRoom(translateY) {
+  // dropContent.clientHeight
+  for (let i = 2; i < body.children.length; i++) {
+    body.children[i].style.transform = `translateY(${translateY}px)`;
+  }
+}
+
 mediaQuery.addListener(isPhone);
 isPhone(mediaQuery);
 
+let drop = true;
+
 dropBtn.addEventListener("click", function (e) {
-  dropContent.classList.toggle("hidden");
-  // carsoel.classList.toggle("pull-down");
+  //needed to continue checking
+  if (drop) {
+    dropContent.style.transform = `translateY(0%)`;
+    makeRoom(dropContent.clientHeight);
+    drop = false;
+  } else {
+    dropContent.style.transform = `translateY(-100%)`;
+    makeRoom(0);
+    drop = true;
+  }
 });

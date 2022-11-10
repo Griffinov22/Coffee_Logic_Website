@@ -1,9 +1,36 @@
-@media (max-width: 1412px) {
-  /* shop.html */
-  #main-shop {
+@media (max-width: 1000px) {
+  #main {
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 50px;
+    align-content: center;
+    width: 100%;
+  }
+  .left-col,
+  .right-col {
+    float: none;
+    margin: initial;
+    width: 90%;
+    text-align: center;
+    padding: 0;
+    margin: 5%;
+  }
+  #user-form {
+    float: none;
+    margin: 20% auto;
+    width: 80%;
+  }
+  .img {
+    width: 80%;
+    height: 80%;
+  }
+
+  #user-form {
+    display: flex;
+    flex-direction: column;
+  }
+  #user-form .payment-div,
+  #user-form #first-name {
+    width: 100%;
   }
 }

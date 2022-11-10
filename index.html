@@ -20,6 +20,7 @@
     />
     <title>Coffee Logic</title>
   </head>
+
   <body>
     <nav id="nav">
       <img
@@ -36,7 +37,7 @@
       </ul>
       <!-- button here when on a mobile device -->
       <div class="wrapper">
-        <button type="button" class="drop-btn hidden">
+        <button type="button" class="drop-btn">
           <svg
             width="32px"
             height="32px"
@@ -62,17 +63,25 @@
             />
           </svg>
         </button>
+      </div>
     </nav>
 
-    <div class="drop-content hidden">
+    <div class="drop-content">
       <ul id="drop-ul">
-        <li class="nav-item"><a href="index.html">Home</a></li>
-        <li class="nav-item"><a href="about.html">About</a></li>
-        <li class="nav-item"><a href="shop.html">Shop</a></li>
-        <li class="nav-item"><a href="contact.html">Contact</a></li>
+        <li class="nav-item" onclick="location.href='index.html'">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="nav-item" onclick="location.href='about.html'">
+          <a href="about.html">About</a>
+        </li>
+        <li class="nav-item" onclick="location.href='shop.html'">
+          <a href="shop.html">Shop</a>
+        </li>
+        <li class="nav-item" onclick="location.href='contact.html'">
+          <a href="contact.html">Contact</a>
+        </li>
       </ul>
     </div>
-  
 
     <div id="div-carosel">
       <h1 id="carosel-text">
