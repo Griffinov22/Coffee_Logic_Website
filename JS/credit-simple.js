@@ -48,16 +48,9 @@ Quantity: ${quantityInput.value}<br/><span id='final-price'>Final Price: $${
 
 payForm.addEventListener("submit", function (e) {
   // blanket statement that removes .basket
-  e.preventDefault();
   if (message.classList.contains("basket")) message.classList.toggle("basket");
 
   message.textContent = "Your payment was successful!";
   message.style.color = "green";
   payForm.insertAdjacentElement("beforeend", message);
-  //setting the form back to normal 'big fakey boi'
-  fullForm.forEach((el) => {
-    if (el == submitbtn) return;
-    el.value = "";
-  });
-  quantityInput.value = "1";
 });

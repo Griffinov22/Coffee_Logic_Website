@@ -37,17 +37,17 @@ payForm.addEventListener("submit", function (e) {
     message.style.color = "red";
     payForm.insertAdjacentElement("beforeend", message);
   } else {
-    e.preventDefault();
+    // e.preventDefault();
     message.textContent = "Your payment was successful!";
     message.style.color = "green";
     payForm.insertAdjacentElement("beforeend", message);
     //setting the form back to normal 'big fakey boi'
-    fullForm.forEach((el) => {
-      if (el == submitbtn) return;
-      el.value = "";
-    });
-    typeInput.value = "default";
-    quantityInput.value = "1";
+    // fullForm.forEach((el) => {
+    //   if (el == submitbtn) return;
+    //   el.value = "";
+    // });
+    // typeInput.value = "default";
+    // quantityInput.value = "1";
   }
 });
 

@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="./JS/credit-simple.js"></script>
-    <script defer src="./JS/drop-down.js"></script>
+    <script defer src="/JS/credit-beans.js"></script>
+    <script defer src="/JS/drop-down.js"></script>
     <link rel="stylesheet" href="/CSS/shop-item-template.css" type="text/css" />
-    <link href="/CSS/nav-template.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="/CSS/nav-template.css" type="text/css" />
     <link rel="stylesheet" href="/CSS/Media-Queries/shop-item-queries.css" />
-    <title>Coffee Logic Store-Coffee Mug</title>
+    <title>Document</title>
   </head>
   <body>
     <nav id="nav">
@@ -73,18 +73,28 @@
       </ul>
     </div>
 
-    <div id="content">
+    <main id="main">
       <div class="left-col">
-        <h2 class="prod-name">Coffee Logic Mug</h2>
+        <h2 class="prod-name">Lantern Delight (Light Roast)</h2>
         <h3 class="price">$12.99</h3>
         <p class="prod-desc">
-          You get what you paid for with this mug. One of the worlds greatest
-          coffee mugs. While we can't legally tell you that drinking from this
-          mug will make you smarter, we can tell you that only smart people buy
-          this mug.
+          Lantern Delight features a citrusy chocolate aroma with a silky body,
+          notes of caramel, and a lemony sweetness from Brazil. It has a
+          pleasant finish of caramel and chocolate.
         </p>
 
-        <form id="top-form" class="form" action="#">
+        <form id="top-form" class="form" action="#" method="post">
+          <div class="box">
+            <select name="types-of-beans" class="dropdown" id="type">
+              <option value="default" selected>Type</option>
+              <option value="blonde">
+                Lantern Delight Roast (Blonde Roast)
+              </option>
+              <option value="medium">Liquid Logic Roast (Medium Roast)</option>
+              <option value="dark">Night Owl Roast (Dark Roast)</option>
+            </select>
+          </div>
+
           <div class="box">
             <select name="quantity" class="dropdown" id="quantity">
               <option value="1">1</option>
@@ -99,69 +109,69 @@
       <div class="right-col">
         <img
           class="img"
-          src="/images/mug.JPG"
+          src="/images/Lantern Roast.png"
           alt="lantern roast coffee beans"
         />
       </div>
-    </div>
-    <div style="clear: both"></div>
+      <div style="clear: both"></div>
 
-    <form id="user-form" action="/PHP/processing.php" method="post">
-      <h2 id="payment-header">Payment Method</h2>
+      <form id="user-form" action="./PHP/processing.php" method="post">
+        <h2 id="payment-header">Payment Method</h2>
 
-      <div id="first-div" class="payment-div">
-        <label for="first-name"
-          >First-Name: <br /><input
-            id="first-name"
-            class="payment-el"
-            name="first-name"
-            type="text"
-            required
-        /></label>
-      </div>
+        <div id="first-div" class="payment-div">
+          <label for="first"
+            >First-Name: <br /><input
+              id="first-name"
+              class="payment-el"
+              name="first"
+              type="text"
+              required
+          /></label>
+        </div>
 
-      <div id="last-div" class="payment-div">
-        <label for="last-name"
-          >Last-Name: <br /><input
-            id="last-name"
-            class="payment-el"
-            name="last-name"
-            type="text"
-            required
-        /></label>
-      </div>
+        <div id="last-div" class="payment-div">
+          <label for="last"
+            >Last-Name: <br /><input
+              id="last-name"
+              class="payment-el"
+              name="last"
+              type="text"
+              required
+          /></label>
+        </div>
 
-      <div id="card-div" class="payment-div">
-        <label for="card-info"
-          >Card-Info: <br /><input
-            id="card-info"
-            class="payment-el"
-            type="tel"
-            inputmode="numeric"
-            pattern="[0-9\s]{13,19}"
-            maxlength="19"
-            placeholder="xxxx xxxx xxxx xxxx"
-            required
-        /></label>
-      </div>
+        <div id="card-div" class="payment-div">
+          <label for="card-info"
+            >Card-Info: <br /><input
+              id="card-info"
+              class="payment-el"
+              type="tel"
+              inputmode="numeric"
+              pattern="[0-9\s]{13,19}"
+              maxlength="19"
+              placeholder="xxxx xxxx xxxx xxxx"
+              required
+          /></label>
+        </div>
 
-      <div id="address-div" class="payment-div">
-        <label for="address"
-          >Address: <br /><input
-            id="address"
-            class="payment-el"
-            name="address"
-            type="text"
-            placeholder="110 Coffee Road 46932, IN, USA"
-            required
-        /></label>
-      </div>
+        <div id="address-div" class="payment-div">
+          <label for="address"
+            >Address: <br /><input
+              id="address"
+              class="payment-el"
+              name="address"
+              type="text"
+              placeholder="110 Coffee Road 46932, IN, USA"
+              required
+          /></label>
+        </div>
 
-      <div id="wrapper-btn">
-        <input type="submit" id="payment-btn" value="Order Me Now!" />
-      </div>
-      <!-- JS input h2 el here to notify user that it was successful or error -->
-    </form>
+        <div id="wrapper-btn">
+          <input type="submit" id="payment-btn" value="Order Me Now!" />
+        </div>
+        <!-- JS input h2 el here to notify user that it was successful or error -->
+      </form>
+    </main>
 
     <footer id="footer">
       <ul id="footer-list">

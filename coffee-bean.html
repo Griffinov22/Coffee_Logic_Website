@@ -83,7 +83,7 @@
           pleasant finish of caramel and chocolate.
         </p>
 
-        <form id="top-form" class="form" action="#">
+        <form id="top-form" class="form" action="#" method="post">
           <div class="box">
             <select name="types-of-beans" class="dropdown" id="type">
               <option value="default" selected>Type</option>
@@ -115,26 +115,26 @@
       </div>
       <div style="clear: both"></div>
 
-      <form id="user-form">
+      <form id="user-form" action="./PHP/processing.php" method="post">
         <h2 id="payment-header">Payment Method</h2>
 
         <div id="first-div" class="payment-div">
-          <label for="first-name"
+          <label for="first"
             >First-Name: <br /><input
               id="first-name"
               class="payment-el"
-              name="first-name"
+              name="first"
               type="text"
               required
           /></label>
         </div>
 
         <div id="last-div" class="payment-div">
-          <label for="last-name"
+          <label for="last"
             >Last-Name: <br /><input
               id="last-name"
               class="payment-el"
-              name="last-name"
+              name="last"
               type="text"
               required
           /></label>
