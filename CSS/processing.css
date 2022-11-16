@@ -1,5 +1,5 @@
 .container {
-  height: 80vh;
+  /* height: 80vh; */
   font-family: var(--MainFont);
 }
 .container h1 {
@@ -35,4 +35,16 @@
 .cred-item span {
   color: rgb(18, 109, 18);
   font-variant: normal;
+}
+
+#img-container {
+  margin: 10% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#img-container img {
+  width: 300px;
+  border-radius: 50%;
 }

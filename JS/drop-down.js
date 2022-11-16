@@ -22,7 +22,7 @@ function isPhone(e) {
   }
 }
 
-//setup smooth transition for all elements
+//setup smooth transition for all elements after drop down
 for (let i = 2; i < body.children.length; i++) {
   body.children[i].style.transition = `transform 1s ease-in-out`;
 }
@@ -43,6 +43,7 @@ dropBtn.addEventListener("click", function (e) {
   //needed to continue checking
   if (drop) {
     dropContent.style.transform = `translateY(0%)`;
+    dropContent.style.opacity = "1";
     makeRoom(dropContent.clientHeight);
     drop = false;
   } else {

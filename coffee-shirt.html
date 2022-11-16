@@ -73,103 +73,108 @@
       </ul>
     </div>
 
-    <div id="content">
-      <div class="left-col">
-        <h2 class="prod-name">Coffee Logic T-Shirt</h2>
-        <h3 class="price">$12.99</h3>
-        <p class="prod-desc">
-          Flaunt your coffee pride with your very own Coffee Logic T-Shirt! Made
-          from soft-touch cotton, this shirt was definitely made for you. Make
-          the smart, or should I say 'logical,' choice here and pick one up.
-        </p>
+    <main id="main">
+      <div id="content">
+        <div class="left-col">
+          <h2 class="prod-name">Coffee Logic T-Shirt</h2>
+          <h3 class="price">$12.99</h3>
+          <p class="prod-desc">
+            Flaunt your coffee pride with your very own Coffee Logic T-Shirt!
+            Made from soft-touch cotton, this shirt was definitely made for you.
+            Make the smart, or should I say 'logical,' choice here and pick one
+            up.
+          </p>
 
-        <form id="top-form" class="form" action="#">
-          <div class="box">
-            <select name="quantity" class="dropdown" id="quantity">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-            </select>
-          </div>
-        </form>
+          <form id="top-form" class="form" action="#">
+            <div class="box">
+              <select name="quantity" class="dropdown" id="quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+          </form>
+        </div>
+
+        <div class="right-col">
+          <img
+            class="img"
+            src="/images/shirt.JPG"
+            alt="lantern roast coffee beans"
+          />
+        </div>
       </div>
+      <div style="clear: both"></div>
 
-      <div class="right-col">
-        <img
-          class="img"
-          src="/images/shirt.JPG"
-          alt="lantern roast coffee beans"
-        />
-      </div>
-    </div>
-    <div style="width: 100%; clear: both"></div>
-    <!-- fix this payment method with media queries -->
-    <form id="user-form" action="/PHP/processing.php" method="post">
-      <h2 id="payment-header">Payment Method</h2>
+      <!-- fix this payment method with media queries -->
+      <form id="user-form" action="/PHP/processing.php" method="post">
+        <h2 id="payment-header">Payment Method</h2>
 
-      <div id="first-div" class="payment-div">
-        <label for="first-name"
-          >First-Name: <br /><input
-            id="first-name"
-            class="payment-el"
-            name="first-name"
-            type="text"
-            required
-        /></label>
-      </div>
+        <div id="first-div" class="payment-div">
+          <label for="first-name"
+            >First-Name: <br /><input
+              id="first-name"
+              class="payment-el"
+              name="first"
+              type="text"
+              required
+          /></label>
+        </div>
 
-      <div id="last-div" class="payment-div">
-        <label for="last-name"
-          >Last-Name: <br /><input
-            id="last-name"
-            class="payment-el"
-            name="last-name"
-            type="text"
-            required
-        /></label>
-      </div>
+        <div id="last-div" class="payment-div">
+          <label for="last-name"
+            >Last-Name: <br /><input
+              id="last-name"
+              class="payment-el"
+              name="last"
+              type="text"
+              required
+          /></label>
+        </div>
 
-      <div id="card-div" class="payment-div">
-        <label for="card-info"
-          >Card-Info: <br /><input
-            id="card-info"
-            class="payment-el"
-            type="tel"
-            inputmode="numeric"
-            pattern="[0-9\s]{13,19}"
-            maxlength="19"
-            placeholder="xxxx xxxx xxxx xxxx"
-            required
-        /></label>
-      </div>
+        <div id="card-div" class="payment-div">
+          <label for="card-info"
+            >Card-Info: <br /><input
+              id="card-info"
+              class="payment-el"
+              type="tel"
+              inputmode="numeric"
+              pattern="[0-9\s]{13,19}"
+              maxlength="19"
+              placeholder="xxxx xxxx xxxx xxxx"
+              required
+          /></label>
+        </div>
 
-      <div id="address-div" class="payment-div">
-        <label for="address"
-          >Address: <br /><input
-            id="address"
-            class="payment-el"
-            name="address"
-            type="text"
-            placeholder="110 Coffee Road 46932, IN, USA"
-            required
-        /></label>
-      </div>
+        <div id="address-div" class="payment-div">
+          <label for="address"
+            >Address: <br /><input
+              id="address"
+              class="payment-el"
+              name="address"
+              type="text"
+              placeholder="110 Coffee Road 46932, IN, USA"
+              required
+          /></label>
+        </div>
 
-      <div id="wrapper-btn">
-        <input type="submit" id="payment-btn" value="Order Me Now!" />
-      </div>
-      <!-- JS input h2 el here to notify user that it was successful or error -->
-    </form>
+        <div id="wrapper-btn">
+          <input type="submit" id="payment-btn" value="Order Me Now!" />
+        </div>
+        <!-- JS input h2 el here to notify user that it was successful or error -->
+      </form>
+      <div style="clear: both"></div>
 
-    <footer id="footer">
-      <ul id="footer-list">
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">Instagram</a></li>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">About Us</a></li>
-      </ul>
-    </footer>
+      <footer id="footer">
+        <ul id="footer-list">
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </footer>
+    </main>
   </body>
 </html>

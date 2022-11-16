@@ -57,17 +57,17 @@
 
     <div class="drop-content">
       <ul id="drop-ul">
-        <li class="nav-item" onclick="location.href='index.html'">
-          <a href="index.html">Home</a>
+        <li class="nav-item" onclick="location.href='../index.html'">
+          <a href="../index.html">Home</a>
         </li>
-        <li class="nav-item" onclick="location.href='about.html'">
-          <a href="about.html">About</a>
+        <li class="nav-item" onclick="location.href='../about.html'">
+          <a href="../about.html">About</a>
         </li>
-        <li class="nav-item" onclick="location.href='shop.html'">
-          <a href="shop.html">Shop</a>
+        <li class="nav-item" onclick="location.href='../shop.html'">
+          <a href="../shop.html">Shop</a>
         </li>
-        <li class="nav-item" onclick="location.href='contact.html'">
-          <a href="contact.html">Contact</a>
+        <li class="nav-item" onclick="location.href='../contact.html'">
+          <a href="../contact.html">Contact</a>
         </li>
       </ul>
     </div>
@@ -81,8 +81,9 @@
         <li class="cred-item">Last Name: <span><?php echo $_POST['last'];?></span></li>
         <li class="cred-item">Address: <span><?php echo $_POST['address'];?></span></li>
       </ul>
-      
-      
+    </div>
+    <div id="img-container">
+      <img src='../images/moving-images/coffee-space.gif' alt="coffee mug">
     </div>
 
     <footer id="footer">

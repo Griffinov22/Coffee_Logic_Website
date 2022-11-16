@@ -1,6 +1,6 @@
 .left-col {
   width: 40%;
-  height: auto;
+
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 10%;
@@ -17,7 +17,6 @@
 
 .right-col {
   width: 40%;
-  height: auto;
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 10%;
@@ -100,10 +99,10 @@
   background-color: rgba(211, 208, 208, 0.4);
   margin-bottom: 10%;
   margin-top: 20px;
+  margin-right: 5%;
   position: relative;
   font-size: 20px;
   font-family: var(--mainFont);
-  margin-right: 5%;
 }
 #payment-header {
   position: absolute;
