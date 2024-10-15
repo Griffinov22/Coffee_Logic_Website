@@ -1,6 +1,6 @@
 # Coffee Logic Website
 
-This project was developed as a final exam for the Internet Foundations course at Purdue University. The website focuses on providing detailed information about coffee, including brewing techniques and different types of coffee beans. It was built to demonstrate a variety of web development skills learned throughout the course.
+This project was developed as a final exam for the Internet Foundations course at Purdue University. The website focuses on the fundamentals of what it takes to build a website, and it's versatility when viewing on different screen sizes. It was built to demonstrate a variety of web development skills learned throughout the course including HTML, CSS, and JavaScript.
 
 <img src="images/screenshot.png" alt="Screenshot of Coffee Logic Website" style="width: 500px;" />
 
